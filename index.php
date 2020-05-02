@@ -13,14 +13,13 @@ if (LOGGEDIN && !isset($_GET['level'])) {
 		include 'header.inc.php';
 		?>
 		<div style="text-align:center; min-height:100%;">
-			<h3>Congratulations!</h3>
-			<p>You beat the last level in the game!</p>
-
+<h3> ¡Felicitaciones! </h3>
+<p> ¡Has vencido el último nivel del juego! </p>
 			<p><img src="./includes/fireworks.gif"></p>
 
-			<p>You may want to go <a href="./">look over the levels</a> to make sure you didn't miss any.</p>
+			<p> Es posible que desee <a href="./"> revisar los niveles </a> para asegurarse de no perderse ninguno. </p>
 
-			<p>Otherwise, give yourself a pat on the back! You're a real hacker now!</p>
+			<p>De lo contrario, date una palmadita en la espalda! Eres un verdadero hacker ahora!</p>
 
 			<div style="height:150px;"></div>
 		</div>
@@ -36,7 +35,7 @@ if (LOGGEDIN && !isset($_GET['level'])) {
 <html lang="en"> 
 <head> 
 	<meta charset="UTF-8" />
-	<title>CS4G Network Simulator</title>
+	<title>ITS Villada Simulador</title>
 	
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
@@ -75,26 +74,26 @@ if (LOGGEDIN && !isset($_GET['level'])) {
 </div>
 
 <div id="editor" style="display:none;">
-	Sent from: 
+	Enviado desde:
 	<select id="pktFrom">
 		<option>Alice</option>
 		<option>Bob</option>
 		<option>Carol</option>
 	</select><br>
 	<fieldset>
-		<legend>Network Layer</legend>
+		<legend>Capa de red</legend>
 		srcip: <input type="text" id="srcip"></input><br>
 		dstip: <input type="text" id="dstip"></input>
 	</fieldset>
 	<fieldset>
-		<legend>Transport Layer</legend>
+		<legend>Capa de transporte</legend>
 		payload: <input type="text" id="payload"></input><br>
 		proto: <input type="text" id="other"></input>
 	</fieldset>
 </div>
 
 <div id="winner" style="display:none;">
-	<p>You won the level! Congrats!</p>
+	<p>¡Has ganado el nivel! ¡Felicidades!</p>
 </div>
 
 <div id="footer" style="position:absolute;bottom:0.5em;right:0.5em;font-size:0.5em">
@@ -107,7 +106,7 @@ if (LOGGEDIN && !isset($_GET['level'])) {
 
 <div id="loading" style="position:absolute;top:0;left:0;right:0;bottom:0;background-color:#DDD;color:#222;text-align:center">
 	<h2>Netsim</h3>
-	<p>Loading...<p>
+	<p>Cargando...<p>
 </div>
 
 </body>
