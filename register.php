@@ -17,11 +17,11 @@ if (isset($_POST['reg_username']) && isset($_POST['reg_password'])) {
 			$row = $res->fetchArray();
 			$_SESSION['cs4g_user_id'] = $row['id'];
 			header('Location: ./');
-			exit('Registration successful! <a href="./">Continue</a>');
+			exit('¡Registro exitoso!<a href="./">Seguir</a>');
 		}
-		else $login_error = "Hrm, something happened. Try again! (".$db->lastErrorMsg().")";
+		else $login_error = "Hrm,algo pasó. ¡Inténtalo de nuevo! (".$db->lastErrorMsg().")";
 	} else {
-		$login_error = "Someone has that username already...";
+		$login_error = "Alguien ya tiene ese nombre de usuario...";
 	}
 }
 
@@ -29,18 +29,18 @@ include 'header.inc.php';
 
 ?>
 
-<h3>Register</h3>
+<h3>Registrarse</h3>
 
-<p>User accounts are only used to track your progress through levels. Please note that Netsim is still in <strong>beta</strong>, so we may need to reset the user database from time to time.</p>
+<p>Las cuentas de usuario solo se utilizan para rastrear su progreso a través de los niveles. Tenga en cuenta que Netsim todavía está en <strong> beta </strong>, por lo que es posible que necesitemos restablecer la base de datos de usuarios de vez en cuando.</p>
 
 <?=(isset($login_error) ? "<p>".$login_error."</p>\n" : "")?>
 
 <form method="post" action="register.php" onsubmit="if (document.getElementById('reg_password').value == document.getElementById('confirm_password').value) return true; else { alert('Passwords don\'t match!'); return false; }">
-	<p>Username:<br>
+	<p>Nombre de usuario<br>
 	<input type="text" name="reg_username"></p>
-	<p>Password:<br>
+	<p>Contraseña:<br>
 	<input type="password" name="reg_password" id="reg_password"></p>
-	<p>Confirm password:<br>
+	<p>Confirmar contraseña:<br>
 	<input type="password" id="confirm_password"></p>
 	<p><input type="submit" value="Register"></p>
 </form>
