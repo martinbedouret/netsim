@@ -1,15 +1,15 @@
 
-<p>The srcip and dstip headers can be easily changed to specify different source and destination addresses.
-In the previous levels, we saw that changing the destination address changed the direction in which the packet was sent.
-Note, however, that we did not need to specify a source address. In fact, routers do not take into account where
-a packet is coming from, only where it is going. One security flaw of the Internet is that we can easily make a
-packet <strong>look</strong> like it is coming from one address when it is really coming from another. This is called
-<strong>spoofing</strong>.
+<p> Los encabezados srcip y dstip se pueden cambiar fácilmente para especificar diferentes direcciones de origen y destino.
+En los niveles anteriores, vimos que cambiar la dirección de destino cambió la dirección en la que se envió el paquete.
+Sin embargo, tenga en cuenta que no necesitamos especificar una dirección de origen. De hecho, los enrutadores no tienen en cuenta dónde
+viene un paquete, solo hacia donde va. Una falla de seguridad de Internet es que podemos hacer fácilmente
+el paquete <strong> parece </strong> que proviene de una dirección cuando realmente proviene de otra. Se llama
+<strong> suplantación de identidad </strong>.
 
-<p>To pass this level, send a packet from Alice's computer to Bob's computer that looks like it is coming from Carol.
+<p> Para pasar este nivel, envía un paquete desde la computadora de Alice a la computadora de Bob que parece que viene de Carol.
 
-<p><em>Notice that we can trick Bob into thinking Carol is talking to him, even though we're not allowed to send packets from Carol!</em>
+<p> <em> ¡Tenga en cuenta que podemos engañar a Bob para que piense que Carol está hablando con él, a pesar de que no se nos permite enviar paquetes de Carol! </em>
 
-<h3>Level Objectives</h3>
+<h3> Objetivos de nivel </h3>
 
-<ul><li>make Bob think he received a packet from Carol</li></ul>
+<ul> <li> haz que Bob piense que recibió un paquete de Carol </li> </ul>

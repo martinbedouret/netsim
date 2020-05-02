@@ -1,21 +1,21 @@
 
-<p>The router in this level responds to a special type of ping, called a "Broadcast ping".  When a router receives a packet that is addressed
-to the broadcast address, it replicates it and sends it to <em>all</em> the machines on the network.
+<p> El enrutador en este nivel responde a un tipo especial de ping, llamado "ping de difusión". Cuando un enrutador recibe un paquete dirigido
+a la dirección de transmisión, lo replica y lo envía a <em> todos </em> las máquinas de la red.
 
-<p>In this level, Google has received an <strong>upgrade</strong>: it can no longer be DoS'd from a single computer.  
-Multiple computers will be required to coordinate with each other in order to send enough traffic.
+<p> En este nivel, Google ha recibido una <strong> actualización </strong>: ya no se puede hacer DoS desde una sola computadora.
+Se requerirán varias computadoras para coordinarse entre sí para enviar suficiente tráfico.
 
-<p>However, you only have control of a single computer!  You will have to implement a <strong>smurf attack</strong>.  In a smurf attack, you leverage 
-other devices to send traffic <em>for you</em>.
+<p> Sin embargo, ¡solo tienes el control de una sola computadora! Tendrá que implementar un <strong> ataque de pitufo </strong>. En un ataque de pitufo, aprovechas
+otros dispositivos para enviar tráfico <em> por usted </em>.
 
-<p>Experiment with sending broadcast pings by sending a message with the dstip set to "Broadcast".  
-See if you can overwhelm Google by combining this with what you learned about spoofing packet source addresses.
+<p> Experimente con el envío de pings de transmisión enviando un mensaje con el dstip configurado a "Broadcast".
+Vea si puede abrumar a Google combinando esto con lo que aprendió sobre la suplantación de direcciones de origen de paquetes.
 
-<h3>Level Objectives</h3>
+<h3> Objetivos de nivel </h3>
 
 <ul>
-	<li>Send a ping to the IP <strong>Broadcast</strong></li>
-	<li>Can you get Barbara to send a packet to Google?</li>
-	<li>Overwhelm Google with traffic</li>
-	<li>Try to do this with only one packet in the Editor! (you may use the "repeat" feature)
+<li> Enviar un ping a la IP <strong> Broadcast</strong> </li>
+<li> ¿Puedes hacer que Barbara envíe un paquete a Google? </li>
+<li> Abruma a Google con el tráfico </li>
+<li> ¡Intenta hacer esto con un solo paquete en el Editor! (puede usar la función "repetir")
 </ul>
