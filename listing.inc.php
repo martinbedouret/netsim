@@ -1,6 +1,6 @@
 <?php include 'header.inc.php'; ?>
 
-<div style="float:right;"><input type="button" value="Log out" onclick="location.href='./?logout'"></div>
+<div style="float:right;"><input type="button" value="Cerrar sesión" onclick="location.href='./?logout'"></div>
 
 <p>¡Bienvenido a Netsim! Si es la primera vez que juegas, te recomendamos que comiences desde el primer nivel a continuación y sigas avanzando.<p>
 
