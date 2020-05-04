@@ -28,7 +28,7 @@ if (LOGGEDIN && !isset($_GET['level'])) {
 		exit();
 	}
 } else {
-	$leveldata = array('id' => -1, 'filename' => 'login/login', 'name' => 'CS4G Netsim');
+	$leveldata = array('id' => -1, 'filename' => 'login/login', 'name' => 'ITS Villada Netsim');
 }
 
 ?><!doctype html> 
