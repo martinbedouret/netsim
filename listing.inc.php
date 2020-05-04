@@ -4,7 +4,7 @@
 
 <p>¡Bienvenido a Netsim! Si es la primera vez que juegas, te recomendamos que comiences desde el primer nivel a continuación y sigas avanzando.<p>
 
-<p>Tenga en cuenta que este proyecto todavía está en <strong>beta</strong>. Si encuentra algún error, puede informarlo a<a href="https://twitter.com/errorinn">@errorinn</a> or open an issue on <a href="https://github.com/errorinn/netsim/issues">Github</a>.</p>
+<p>Tenga en cuenta que este proyecto todavía está en <strong>beta</strong>. Si encuentra algún error, puede informarlo al mejor profe del Villada (mmmm...quién <a href="https://www.cboard.io/images/staff/martinbedouret.jpg">será?)</a>.</p>
 
 <?php
 
