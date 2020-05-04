@@ -1,14 +1,14 @@
 
 function onDeviceClick() {
 	var ip = this.hasOwnProperty("secret") && this.secret ? "<i>secret</i>" : this.id;
-	$("#subpane").html("<h3>Device info</h3><p><img src=\"./includes/"+(this.image||'imac')+".png\"></p><p>IP address: "+ip+"</p>");
+	$("#subpane").html("<h3>Información del dispositivo</h3><p><img src=\"./includes/"+(this.image||'imac')+".png\"></p><p>IP address: "+ip+"</p>");
 	$("#subpane").show();
 	$("#subpane_close").show();
 	$("#leveldescrip").hide();
 }
 
 function onPacketClick() {
-	var str = "<h3>Packet info</h3>";
+	var str = "<h3>Información del paquete</h3>";
 	str += onPacketClick_helper("network", this);
 	str += onPacketClick_helper("transport", this);
 	str += onPacketClick_helper("application", this);
