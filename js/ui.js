@@ -43,7 +43,7 @@ function createLaunchers() {
 }
 
 function createPacketEditor(index, packet) {
-	var str = "Sent from: <select id=\"pktFrom\">";
+	var str = "Enviado desde: <select id=\"pktFrom\">";
 	for (var i = 0; i < level.devices.length; i++) {
 		if (level.devices[i].player) {
 			str += "<option"+(packet.from == level.devices[i].id ? " selected" : "")+">"+level.devices[i].id+"</option>";
@@ -59,15 +59,15 @@ function createPacketEditor(index, packet) {
 		str += "</fieldset>";
 	}
 
-	str += "<p>Repeat: <input type=\"text\" id=\"repeat\" style=\"width:40px;\" value=\""+(packet.hasOwnProperty("repeat") ? packet.repeat : 1)+"\"></p>";
+	str += "<p>Repetir: <input type=\"text\" id=\"repeat\" style=\"width:40px;\" value=\""+(packet.hasOwnProperty("repeat") ? packet.repeat : 1)+"\"></p>";
 
 	$("#editor").html(str);
 	$('#editor').dialog({
-		title: index < 0 ? "Add packet" : "Update packet",
+		title: index < 0 ? "Agregar paquete" : "Actualizar paquete",
 		resizable:false,
 		buttons:[
-			{ text: "Remove", click:function() { deletePlayerPacket(index); createLaunchers(); $(this).dialog("close"); }},
-			{ text: index < 0 ? "Add" : "Update", click:function() { updatePlayerPacket(index < 0 ? playerPackets.length : index); createLaunchers(); $(this).dialog("close");}}
+			{ text: "Eliminar", click:function() { deletePlayerPacket(index); createLaunchers(); $(this).dialog("close"); }},
+			{ text: index < 0 ? "Añadir" : "Actualizar", click:function() { updatePlayerPacket(index < 0 ? playerPackets.length : index); createLaunchers(); $(this).dialog("close");}}
 		]
 	});
 	$('select').selectmenu();
